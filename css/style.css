@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* font-family: "Poppins", sans-serif; */
+
+/* font-family: "Paytone One", sans-serif; */
+
+/* font-family: "Brygada 1918", serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BGCOLOR: #020512;
+  --Yellow: #fdb934;
+  --WHITE: #fff;
+}
+
+body {
+  background-color: var(--BGCOLOR);
+  color: var(--WHITE);
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+/* HEADer */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  grid-column: 1;
+  height: 100%;
+  padding: 10px 80px;
+}
+
+ul,
+ul li {
+  display: grid;
+
+  list-style-type: none;
+  font-size: 1.2rem;
+  gap: 30px;
+}
+
+ul li img {
+  width: 35px;
+  height: auto;
+}
+
+ul li:hover {
+  padding: 0 5px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.txthead h1 {
+  font-size: 5rem;
+  font-family: "Paytone One", sans-serif;
+}
+
+.txthead h3 {
+  font-size: 2.5rem;
+  font-family: "Brygada 1918", serif;
+}
+
+.link {
+  color: var(--Yellow);
+  font-weight: bolder;
+}
+
+/* MAIN */
+
+main {
+  padding: 80px 80px 0 0;
+  display: grid;
+  grid-column: 2;
+}
+
+/* Boxes section */
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* padding: 50px 0; */
+  text-align: center;
+  background: radial-gradient(circle at center, #fdba34bb, #22222200 40%);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  color: #fff;
+  border: 1.5px solid #ffffffb9;
+  border-radius: 10px;
+  justify-content: center;
+  font-weight: bold;
+  background-color: var(--BGCOLOR);
+}
+
+.box1,
+.box2 {
+  grid-column: span 1;
+}
+
+.box3,
+.box4,
+.box5,
+.box8 {
+  grid-column: span 2;
+}
+
+.box6,
+.box7 {
+  grid-column: span 1;
+}
+
+.box3,
+.box8 {
+  text-align: left;
+}
+
+.box a {
+  display: block;
+}
+
+span {
+  opacity: 0.7;
+}
+
+a {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.box8 {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.box8 img {
+  flex: 1;
+  width: 100%;
+  max-width: 30%;
+  height: 120px;
+  border-radius: 15px;
+  filter: grayscale();
+  opacity: 0.7;
+}
+
+/* ROADMAP SECTION */
+
+.roadmap {
+  background: radial-gradient(circle at center, #000000bb, #00000000 70%);
+}
+
+.headrm {
+  display: grid;
+  padding: 80px 0;
+}
+
+.roadmap h1 {
+  font-size: 2.5rem;
+  font-family: "Paytone One", sans-serif;
+  font-weight: normal;
+}
+
+.roadmap h2 {
+  font-size: 2.5rem;
+  font-family: "Brygada 1918", serif;
+  font-weight: normal;
+}
+
+.roadmap img {
+  width: 100%;
+  height: auto;
+}
+
+.roadmap img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.yellow {
+  color: var(--Yellow);
+}
+
+/* FOOTER */
+
+footer {
+  padding: 10px 80px 10px 0;
+  display: grid;
+  gap: 50px;
+  grid-column: 2;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+footer .logo {
+  font-size: 3rem;
+  display: grid;
+  place-content: center;
+}
+
+footer p {
+  font-size: 1rem;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.row {
+  gap: 5px;
+  display: grid;
+}
+
+/* HAMBURGER MENU */
+
+.menu {
+  display: none;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.menu img {
+  width: 60px;
+  height: auto;
+}
+
+.showmenu {
+  display: flex;
+  justify-content: center;
+  background-color: var(--BGCOLOR);
+  width: 100%;
+  height: auto;
+  display: grid;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+/* SCroll Bar */
+
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: var(--BGCOLOR);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #fdb934;
+}
+
+/* About */
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+#about h1 {
+  font-size: 5rem;
+  font-family: "Brygada 1918", serif;
+}
+
+#about h2 {
+  font-size: 3rem;
+}
+
+#about h3 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#about p {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#about .dlists {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+#about img {
+  display: flex;
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTACT */
+
+#contact h1 {
+  font-size: 5rem;
+}
+
+#contact h2 {
+  font-size: 3rem;
+}
+
+#contact h3 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact h4 {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact a {
+  color: var(--Yellow);
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 20px 0;
+}
+
+.cntaddress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cntaddress img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    grid-column: span 1;
+    object-fit: contain;
+  }
+
+  body {
+    display: block;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 10px 60px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    height: 100px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  #about .dlists {
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box8 img {
+    width: 100%;
+    max-width: 30%;
+    height: 120px;
+    gap: 30px;
+    border-radius: 15px;
+    filter: grayscale();
+    opacity: 0.7;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 5px 40px;
+  }
+
+  footer {
+    display: grid;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .footer .logo {
+    grid-column: span 2;
+  }
+
+  .footer .row3 {
+    width: 100%;
+    grid-column: span 2;
+    display: grid;
+    place-content: left;
+  }
+
+  .box {
+    padding: 22px;
+  }
+
+  .txthead h1 {
+    font-size: 3rem;
+  }
+
+  .txthead h3 {
+    font-size: 1.5rem;
+  }
+
+  #about h1 {
+    font-size: 3rem;
+  }
+
+  #about h3 {
+    font-size: 1.5rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  #contact h1 {
+    font-size: 3rem;
+  }
+  #contact h2 {
+    font-size: 1.7rem;
+  }
+  #contact h3,
+  #contact h4 {
+    font-size: 1.1rem;
+  }
+
+  .cntaddress {
+    display: flex;
+    flex-direction: column;
+  }
+}
