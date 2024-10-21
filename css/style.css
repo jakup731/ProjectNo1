@@ -398,6 +398,27 @@ footer p {
   #about .dlists {
     display: grid;
   }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5,
+  p {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -454,39 +475,29 @@ footer p {
     padding: 22px;
   }
 
-  .txthead h1 {
-    font-size: 3rem;
-  }
-
-  .txthead h3 {
-    font-size: 1.5rem;
-  }
-
-  #about h1 {
-    font-size: 3rem;
-  }
-
-  #about h3 {
-    font-size: 1.5rem;
-  }
-
-  #about p {
-    font-size: 1rem;
-  }
-
-  #contact h1 {
-    font-size: 3rem;
-  }
-  #contact h2 {
-    font-size: 1.7rem;
-  }
-  #contact h3,
-  #contact h4 {
-    font-size: 1.1rem;
-  }
-
   .cntaddress {
     display: flex;
     flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5,
+  p {
+    font-size: 0.8rem;
+  }
+  h6 {
+    font-size: 0.7rem;
   }
 }
